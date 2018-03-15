@@ -1,0 +1,35 @@
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.shack.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image:
+            url('{{ site.baseurl }}{{ site.shack.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.shack.author %}
+        <div class="author-container">
+          <h1>{{ site.shack.author }}</h1>
+        </div>
+        {% endif %}
+        <hr />
+
+        {% if site.shack.tagline %}
+        <div class="tagline-container">
+          <em><p>{{ site.shack.tagline }}</p></em>
+        </div>
+        {% endif %}
+    </header>
+
+    <main>
+      {% if site.shack.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+
+</div> <!-- wrapper -->
