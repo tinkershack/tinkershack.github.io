@@ -1,19 +1,14 @@
 # general configuration
-url: 'tinkershack.in'
 # baseurl: ''
+url: "http://tinkershack.in"
 
 # shack configuration
 shack:
-  logo: "/images/ts-small-96.png"
-  author: "Tinker Shack"
-  tagline: "Hoist the colours!"
-  include_content: true
-  include_analytics: true
-
-google_analytics: UA-115878298-1
-
-# exclude
-exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
+        logo: "/images/ts-small-96.png"
+        author: "Tinker Shack"
+        tagline: "Hoist the colours!"
+        include_content: true
+        include_analytics: true
 
 # Dependencies
 markdown: kramdown
@@ -21,3 +16,12 @@ highlighter: rouge
 
 # Permalinks
 permalink: pretty
+
+google_analytics: UA-115878298-1
+
+# exclude
+exclude:
+        - CNAME
+        - Gemfile
+        - Gemfile.lock
+        - LICENSE

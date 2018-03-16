@@ -1,0 +1,22 @@
+<header>
+    {% if site.shack.logo %}
+    <div class="logo-container">
+      <a class="logo" href="{{ site.url }}" style="background-image:
+        url('{{ site.baseurl }}{{ site.shack.logo }}')"></a>
+    </div>
+    {% endif %}
+
+    {% if site.shack.author %}
+    <div class="author-container">
+      <h1>{{ site.shack.author }}</h1>
+    </div>
+    {% endif %}
+    <hr />
+
+    {% if site.shack.tagline %}
+    <div class="tagline-container">
+      <em><p>{{ site.shack.tagline }}</p></em>
+    </div>
+    {% endif %}
+</header>
+
