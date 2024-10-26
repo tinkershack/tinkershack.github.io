@@ -130,6 +130,26 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
+        footer nav {
+            margin-top: 1rem;
+        }
+        footer nav a {
+            color: #94a3b8;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer nav a:hover {
+            color: #bfdbfe;
+        }
+        .email-link {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .email-link:hover {
+            color: #93c5fd;
+        }
     </style>
 </head>
 <body>
@@ -142,17 +162,19 @@
                 <h1>Tinkershack</h1>
             </div>
             <nav>
+                <a href="https://github.com/tinkershack">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+                <a href="#about">About</a>
                 <a href="mailto:info@tinkershack.in">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                     </svg>
                 </a>
-                <a href="https://github.com/tinkershack">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                    </svg>
-                </a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
 
@@ -176,7 +198,7 @@
                 </div>
             </section>
 
-            <section class="content">
+            <section id="about" class="content">
                 <div>
                     <h3>We build fluid tech that flows with the ebbs and eddies of nature's rhythms</h3>
                     <p>
@@ -191,10 +213,23 @@
                     <p>"In the wild valleys and mystique peaks of Himalayas, we find our greatest inspiration."</p>
                 </div>
             </section>
+
+            <section id="contact" class="content">
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p>Email: <a href="mailto:info@tinkershack.in" class="email-link">info@tinkershack.in</a></p>
+                    <p>Location: A far flung valley in the Dhauladhar range</p>
+                    <p>We're always excited to discuss new projects and collaborations. Reach out to us for innovative solutions to your complex challenges.</p>
+                </div>
+            </section>
         </main>
 
         <footer>
             <p>&copy; <script>document.write(new Date().getFullYear())</script> Tinkershack. Riding thermals and chasing clouds.</p>
+            <nav>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </nav>
         </footer>
     </div>
 </body>
