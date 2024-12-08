@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +15,80 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             color: #2c3e50;
         }
+
         a {
             color: #3498db;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
     </style>
 </head>
+
 <body>
+    <header>
+        <a href="https://tinkershack.in">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                </svg>
+                <h1>Tinkershack</h1>
+            </div>
+        </a>
+        <nav>
+            <a href="https://github.com/tinkershack">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+            </a>
+        </nav>
+    </header>
     <h1>Privacy Policy</h1>
 
     <h2>Introduction</h2>
-    <p>Tinkershack ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your personal information when you use our meteorology forecast services ("Services"), including paragliding forecasts and suggestions.</p>
+    <p>Tinkershack ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we
+        collect, use, and disclose your personal information when you use our meteorology forecast services
+        ("Services"), including paragliding forecasts and suggestions.</p>
 
     <h2>Information We Collect</h2>
     <ul>
-        <li><strong>Personal Information</strong>: We may collect personal information such as your name, email address, and contact details when you register for our Services or contact us.</li>
-        <li><strong>Usage Data</strong>: We collect data on how you use our Services, including your IP address, browser type, and access times.</li>
-        <li><strong>Location Data</strong>: For providing accurate paragliding forecasts, we may collect your location data.</li>
+        <li><strong>Personal Information</strong>: We may collect personal information such as your name, email address,
+            and contact details when you register for our Services or contact us.</li>
+        <li><strong>Usage Data</strong>: We collect data on how you use our Services, including your IP address, browser
+            type, and access times.</li>
+        <li><strong>Location Data</strong>: For providing accurate paragliding forecasts, we may collect your location
+            data.</li>
     </ul>
 
     <h2>How We Use Your Information</h2>
     <ul>
-        <li><strong>Service Provision</strong>: To provide and improve our Services, including personalized paragliding forecasts and suggestions.</li>
-        <li><strong>Communication</strong>: To communicate with you about updates, promotions, and other information related to our Services.</li>
+        <li><strong>Service Provision</strong>: To provide and improve our Services, including personalized paragliding
+            forecasts and suggestions.</li>
+        <li><strong>Communication</strong>: To communicate with you about updates, promotions, and other information
+            related to our Services.</li>
         <li><strong>Analytics</strong>: To analyze usage patterns and improve our Services.</li>
     </ul>
 
@@ -54,30 +100,40 @@
     </ul>
 
     <h2>Data Security</h2>
-    <p>We implement appropriate security measures to protect your personal information from unauthorized access, disclosure, or destruction.</p>
+    <p>We implement appropriate security measures to protect your personal information from unauthorized access,
+        disclosure, or destruction.</p>
 
     <h2>Your Rights</h2>
-    <p>You have the right to access, correct, or delete your personal information. You can exercise these rights by contacting us at <a href="mailto:support@tinkershack.in">support@tinkershack.in</a>.</p>
+    <p>You have the right to access, correct, or delete your personal information. You can exercise these rights by
+        contacting us at <a href="mailto:support@tinkershack.in">support@tinkershack.in</a>.</p>
 
     <h2>Cookie Policy</h2>
-    <p>We use cookies to enhance your experience on our website. By using our Services, you consent to the use of cookies in accordance with this policy.</p>
+    <p>We use cookies to enhance your experience on our website. By using our Services, you consent to the use of
+        cookies in accordance with this policy.</p>
     <ul>
-        <li><strong>What Are Cookies?</strong>: Cookies are small text files stored on your device when you visit a website. They help us improve your experience by remembering your preferences and visits.</li>
+        <li><strong>What Are Cookies?</strong>: Cookies are small text files stored on your device when you visit a
+            website. They help us improve your experience by remembering your preferences and visits.</li>
         <li><strong>Types of Cookies We Use</strong>:
             <ul>
                 <li><strong>Essential Cookies</strong>: Necessary for the operation of our website.</li>
-                <li><strong>Analytical/Performance Cookies</strong>: Help us understand how users interact with our website.</li>
+                <li><strong>Analytical/Performance Cookies</strong>: Help us understand how users interact with our
+                    website.</li>
                 <li><strong>Functionality Cookies</strong>: Remember your preferences and settings.</li>
-                <li><strong>Targeting Cookies</strong>: Track your browsing habits to deliver relevant advertisements.</li>
+                <li><strong>Targeting Cookies</strong>: Track your browsing habits to deliver relevant advertisements.
+                </li>
             </ul>
         </li>
-        <li><strong>Managing Cookies</strong>: You can manage cookies through your browser settings. However, disabling cookies may affect your experience on our website.</li>
+        <li><strong>Managing Cookies</strong>: You can manage cookies through your browser settings. However, disabling
+            cookies may affect your experience on our website.</li>
     </ul>
 
     <h2>Changes to Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on our website, and your continued use of our Services constitutes acceptance of the revised Privacy Policy.</p>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on our website, and your
+        continued use of our Services constitutes acceptance of the revised Privacy Policy.</p>
 
     <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@tinkershack.in">support@tinkershack.in</a>.</p>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a
+            href="mailto:support@tinkershack.in">support@tinkershack.in</a>.</p>
 </body>
+
 </html>
